@@ -22,7 +22,7 @@ Compare two models side-by-side. WeightsLens aligns layers by name and calculate
 - **Distribution Ridges:** Watch how weight histograms shift across different layers.
 - **Sparsity Maps:** Instantly see the percentage of zeroed-out weights (crucial for pruning).
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.9+ (Backend)
@@ -31,5 +31,25 @@ Compare two models side-by-side. WeightsLens aligns layers by name and calculate
 ### Installation
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/kianniek/weightslens.git](https://github.com/kianniek/weightslens.git)
+   git clone [https://github.com/your-username/weightslens.git](https://github.com/your-username/weightslens.git)
    cd weightslens
+   ```
+Setup Backend:
+
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+Setup Frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Tech Stack
+Frontend: React + Three.js (WebGL) + D3.js
+Backend: FastAPI + Safetensors + NumPy
+Processing: ONNX Runtime for architecture graph generation
