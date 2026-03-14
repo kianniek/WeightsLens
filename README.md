@@ -49,7 +49,10 @@ npm install
 npm run dev
 ```
 
-Tech Stack
+# Tech Stack
 Frontend: React + Three.js (WebGL) + D3.js
 Backend: FastAPI + Safetensors + NumPy
 Processing: ONNX Runtime for architecture graph generation
+
+# Privacy & Security
+WeightsLens processes files locally or on your private server. By default, no model data is uploaded to third-party cloud storage, ensuring your proprietary weights remain secure.
